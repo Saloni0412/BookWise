@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bookwise_db;
+CREATE DATABASE bookwise_db;
