@@ -15,6 +15,7 @@ async function getBookImage(bookTitle) {
 
     if (response.data.urls && response.data.urls.regular) {
       return response.data.urls.regular;
+      // this image size can be changed to small or thumbnail -dre
     }
 
     return null;
