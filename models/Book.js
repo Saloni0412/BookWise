@@ -24,7 +24,9 @@ Project.init(
       genre: {
         type: DataTypes.STRING,
       },
-      // additional new tech for unsplash photo URL to be saved here??
+      imageURL: {
+        type: DataTypes.STRING,
+      },
       date_created: {
         type: DataTypes.DATE,
         allowNull: false,
