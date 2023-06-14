@@ -102,7 +102,7 @@ nav li a.active {
 
 h1 {
   color: aliceblue;
-  
+
 }
 
 .header {
@@ -128,7 +128,7 @@ h1 {
 }
 
 .connect-icons {
-  position: fixed;
+
   bottom: 0;
   left: 0;
   right: 0;
@@ -162,7 +162,7 @@ footer p {
 .card-container {
   display: flex;
   justify-content: space-around;
-  align-items:flex-start;
+  align-items: flex-start;
   padding: 20px;
   margin-top: 20px;
 }
@@ -173,6 +173,7 @@ footer p {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .card h2 {
@@ -189,4 +190,19 @@ footer p {
 .cover {
   height: 340px;
   width: 250px;
+}
+.add-book-btn {
+  
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-left: 47%;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
+
+.add-book-btn:hover {
+  background-color: #c0392b;
 }
