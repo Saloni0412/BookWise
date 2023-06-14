@@ -158,6 +158,10 @@ h1 {
 footer p {
   margin-left: 1100px;
 }
+/* 
+footer {
+  margin-top: 37%;
+} */
 
 .card-container {
   display: flex;
