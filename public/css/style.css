@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #ddcff0;
+  padding-bottom: 50px;
 }
 
 .container {
@@ -128,7 +129,7 @@ h1 {
 }
 
 .connect-icons {
-
+position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -158,10 +159,6 @@ h1 {
 footer p {
   margin-left: 1100px;
 }
-/* 
-footer {
-  margin-top: 37%;
-} */
 
 .card-container {
   display: flex;
