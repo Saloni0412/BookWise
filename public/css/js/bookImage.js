@@ -1,11 +1,12 @@
 const axios = require('axios');
+require('dotenv').config();
 
 async function getBookImage(bookTitle) {
   try {
     const response = await axios.get('https://api.unsplash.com/photos/random', {
       headers: {
         // we should convert this to .env for security -dre
-        Authorization: 'forYLZWTGMVee-XDkvQgSawGMqlSsFlFDk9KQCw6vZE',
+        Authorization: process.env.API_KEY,
       },
       params: {
         query: bookTitle,
