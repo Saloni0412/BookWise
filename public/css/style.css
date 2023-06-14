@@ -161,8 +161,8 @@ footer p {
 
 .card-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items:flex-start;
   padding: 20px;
   margin-top: 20px;
 }
