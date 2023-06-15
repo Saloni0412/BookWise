@@ -1,13 +1,13 @@
 const login = async (event) => {
     event.preventDefault();
   
-    const username = document.querySelector('#classname').value.trim();
+    const name = document.querySelector('#classname').value.trim();
     const password = document.querySelector('#classname').value.trim();
   
-    if (username && password) {
+    if (name && password) {
       const response = await fetch('/api/whereverlogincodeis', {
         method: 'POST',
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ name, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
