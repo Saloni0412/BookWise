@@ -3,9 +3,9 @@ const { Model, DataTypes } = require('sequelize');
 // ENSURE THIS PATH IS CORRECT -dre
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Book extends Model {}
 
-Project.init(
+Book.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -24,7 +24,9 @@ Project.init(
       genre: {
         type: DataTypes.STRING,
       },
-      // additional new tech for unsplash photo URL to be saved here??
+      imageURL: {
+        type: DataTypes.STRING,
+      },
       date_created: {
         type: DataTypes.DATE,
         allowNull: false,
@@ -43,8 +45,8 @@ Project.init(
       timestamps: false,
       freezeTableName: true,
       underscored: true,
-      modelName: 'project',
+      modelName: 'book',
     }
   );
   
-  module.exports = Project;
+  module.exports = Book;
