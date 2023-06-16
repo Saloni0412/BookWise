@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
       const books = bookData.map((book) => book.get({ plain: true }));
   
       // change this part according to handlebars name
-      res.render('boolshelf', { 
+      res.render('bookshelf', { 
         books, 
         logged_in: req.session.logged_in 
       });
@@ -96,3 +96,5 @@ router.get('/book', withAuth, async (req, res) => {
   
     res.render('signup');
   });
+
+  module.exports = router;
