@@ -1,7 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ddcff0;
+  background-color: #dad6df;
   padding-bottom: 50px;
+}
+
+h3 {
+  font-family: Georgia, sans-serif;
+  font-size: 35px;
+}
+
+.paragraph {
+  font-size: 18px;
 }
 
 .container {
@@ -195,7 +204,7 @@ footer p {
 
 .card {
   width: auto;
-  background-color: #1a0505;
+  background-color: #dad6df;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -231,4 +240,5 @@ footer p {
 
 .add-book-btn:hover {
   background-color: #c0392b;
+  mar
 }
