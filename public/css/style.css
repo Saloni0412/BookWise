@@ -31,10 +31,31 @@ form {
   display: flex;
   flex-direction: column;
 }
+#login-btn {
+  color: white;
+}
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+#signup-btn {
+  color: white;
+}
+
+.login-user {
+  color: black;
+}
+
+.login-pass {
+  color: black;
+}
+
+.signup-user {
+  color: black;
+}
+
+.signup-pass {
+  color: black;
+}
+
+.input {
   height: 30px;
   padding: 10px;
   margin-bottom: 20px;
@@ -99,6 +120,10 @@ nav li a:hover {
 
 nav li a.active {
   background-color: #3a6d7c;
+}
+
+#logout {
+  color: white;
 }
 
 h1 {
