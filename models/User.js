@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 
 // please ensure this PATH is correct
-// const sequelize = require('../config/connection');
+const sequelize = require('../config/connection');
 
 class User extends Model {
   checkPassword(loginPw) {
