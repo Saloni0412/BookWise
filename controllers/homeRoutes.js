@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
       const books = bookData.map((book) => book.get({ plain: true }));
   
       // change this part according to handlebars name
-      res.render('bookshelf', { 
+      res.render('homepage', { 
         books, 
         logged_in: req.session.logged_in 
       });
