@@ -1,20 +1,29 @@
 const axios = require('axios');
 require('dotenv').config();
 
-// this function will takes book title param and generates an unsplash url associated with search term
 async function getBookImage(bookTitle) {
-  const clientId = process.env.API_KEY;
-  const apiUrl = `https://api.unsplash.com/search/photos?page=1&query=${encodeURIComponent(bookTitle)}&client_id=${clientId}`;
-
   try {
-    const response = await axios.get(apiUrl);
-    const image = response.data.results[0].urls.regular; //this can be passed on
-    console.log('Book Image:', image); // for testing, can be removed
+    const response = await axios.get('https://api.unsplash.com/photos/random', {
+      headers: {
+        // we should convert this to .env for security -dre
+        Authorization: process.env.API_KEY,
+      },
+      params: {
+        query: bookTitle,
+        orientation: 'landscape',
+      },
+    });
+
+    if (response.data.urls && response.data.urls.regular) {
+      return response.data.urls.regular;
+      // this image size can be changed to small or thumbnail -dre
+    }
+
+    return null;
   } catch (error) {
-    console.log('An error occurred:', error.message);
+    console.error('Error fetching book image:', error);
+    return null;
   }
 }
-
-//this has been tested externally and will return the url for us to add to page. -Dre
 
 module.exports = getBookImage;
