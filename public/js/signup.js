@@ -1,22 +1,22 @@
 const signUp = async (event) => {
     event.preventDefault();
   
-    const username = document.querySelector('classname').value.trim();
-    const password = document.querySelector('classname').value.trim();
+    const username = document.querySelector('.signup-user').value.trim();
+    const password = document.querySelector('.signup-pass').value.trim();
   
     if (username && password) {
-      const response = await fetch('/api/location', {
+      const response = await fetch('/api/user', {
         method: 'POST',
         body: JSON.stringify({ username, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
-        document.location.replace('mainpage');
+        document.location.replace('/book');
       } else {
         alert(response.statusText);
       }
     }
   };
   
-  document.querySelector('whateverthisidisnamed').addEventListener('submit', signUp);
+  document.getElementById('signup-btn').addEventListener('submit', signUp);
