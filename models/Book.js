@@ -24,9 +24,9 @@ Book.init(
       genre: {
         type: DataTypes.STRING,
       },
-      /*imageURL: {
+      imageURL: {
         type: DataTypes.STRING,
-      },*/
+      },
       date_created: {
         type: DataTypes.DATE,
         allowNull: false,
