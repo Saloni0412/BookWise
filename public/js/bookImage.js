@@ -1,5 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
+const Book = require('../../models/Book')
 
 async function getBookImage(bookTitle) {
   try {
