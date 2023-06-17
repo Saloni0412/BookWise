@@ -1,3 +1,8 @@
+// import book model
+const Book = require('../../models/Book');
+// import image url function
+const getBookImage = require('../../public/js/bookImage');
+
 const newFormHandler = async (event) => {
   event.preventDefault();
 
@@ -6,9 +11,10 @@ const newFormHandler = async (event) => {
   const author = document.querySelector("#").value.trim();
 
   if (name && author) {
+    const imageURL = await getBookImage(name);
     const response = await fetch(`/api/book`, {
       method: "POST", 
-      body: JSON.stringify({ name, author }),
+      body: JSON.stringify({ name, author, imageURL }),
       headers: {
         "Content-Type": "application/json",
       },
