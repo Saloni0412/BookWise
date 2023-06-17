@@ -240,5 +240,12 @@ footer p {
 
 .add-book-btn:hover {
   background-color: #c0392b;
-  mar
+}
+
+.book_name {
+  color: #0e0909;
+}
+
+.bg-color {
+  background-color: #dfdfd6;
 }
