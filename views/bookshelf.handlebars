@@ -1,16 +1,49 @@
-    <div class="card-container">
-        <div class="card">
-            <h2>Book Title</h2>
-            <img class="cover" src="/css/asset/Untitled design (15).png" alt="book page">
-            <p>Card content goes here...</p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    ADD A Book
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-color">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add A Book By Name or Author</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="card">
-            <h2>Card 2</h2>
-            <img class="cover" src="/css/asset/Untitled design (15).png" alt="book page">
-            <p>Card content goes here...</p>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label book_name">Book Name</label>
+                  <input type="Name" class="form-control book_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Book Author</label>
+                  <input type="password" class="form-control author_name" id="exampleInputPassword1">
+                </div>
+               
+                <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+              </form>
         </div>
-        <div class="card">
-            <h2>Card 3</h2><img class="cover" src="/css/asset/Untitled design (15).png" alt="book page">
-            <p>Card content goes here...</p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
         </div>
+      </div>
     </div>
+  </div>
+    <!-- <div class="card-container">
+      <div class="card bg-black">
+          <h2>Book Title</h2>
+          <img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
+          <p>Card content goes here...</p>
+      </div>
+      <div class="card bg-black">
+          <h2>Card 2</h2>
+          <img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
+          <p>Card content goes here...</p>
+      </div>
+      <div class="card bg-black">
+          <h2>Card 3</h2><img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
+          <p>Card content goes here...</p>
+      </div>
+  </div> -->
