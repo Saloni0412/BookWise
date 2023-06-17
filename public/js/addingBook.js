@@ -2,13 +2,13 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   //need to change class or id according to handlebars
-  const userName = document.querySelector("#").value.trim();
+  const name = document.querySelector("#").value.trim();
   const author = document.querySelector("#").value.trim();
 
-  if (userName && author) {
+  if (name && author) {
     const response = await fetch(`/api/book`, {
       method: "POST", 
-      body: JSON.stringify({ userName, author }),
+      body: JSON.stringify({ name, author }),
       headers: {
         "Content-Type": "application/json",
       },

@@ -21,7 +21,11 @@ router.get('/', async (req, res) => {
   
   router.post('/', async (req, res) => {
     try {
-      const createBook = await Book.create(req.body);
+      const createBook = await Book.create(
+        {
+        ...req.body,
+        user_id: req.session.user_id
+      });
       res.status(200).json(createBook);
     } catch (err) {
       res.status(500).json(err);
@@ -30,7 +34,13 @@ router.get('/', async (req, res) => {
   
   router.put('/:id', async (req, res) => {
     try {
-      const updateBook = await Book.update(req.body, {where: {id: req.params.id,},});
+      const updateBook = await Book.update(req.body, {
+        where: 
+        {
+          id: req.params.id,
+          user_id: req.session.user_id,
+        },
+      });
       res.status(200).json(updateBook);
     } catch (err) {
       res.status(500).json(err);
