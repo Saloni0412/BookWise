@@ -34,6 +34,19 @@
   </div>
 </div>
 
+
+{{#if books.length}}
+{{#each books as |book|}}
+<div class="card">
+  {{!-- <img src="{{bookItem.imageURL}}" class="card-img-top" alt="Book Image"> --}}
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text"><strong>Author:</strong> {{author}}</p>
+    <p class="card-text"><strong>Genre:</strong> {{genre}}</p>
+  </div>
+</div>
+{{/each}}
+{{/if}}
     <!-- <div class="card-container">
       <div class="card bg-black">
           <h2>Book Title</h2>
