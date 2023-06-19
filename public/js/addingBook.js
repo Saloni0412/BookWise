@@ -20,7 +20,7 @@ const newFormHandler = async (event) => {
 
     //need to change class or id according to handlebars
     if (response.ok) {
-      document.location.replace("/");
+      document.location.replace("/book");
     } else {
       alert("Failed to create post");
     }
