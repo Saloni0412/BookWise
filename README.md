@@ -7,6 +7,10 @@ BookWise is a web application that allows users to Create a book management syst
 - [Features](#features)
 - [Installtion](#installation)
 - [Technologies](#technologies)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
+- [Deployment](#deployment)
 
 ## Features
 
