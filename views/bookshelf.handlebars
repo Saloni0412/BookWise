@@ -36,7 +36,7 @@
 
 
 {{#if books.length}}
-{{#each books as |book|}}
+{{#each (reverse books) as |book|}}
 <div class="card">
   <img src="{{imageURL}}" class="card-img-top" alt="Book Image">
   <div class="card-body">
