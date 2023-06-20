@@ -323,3 +323,6 @@ h5 {
   box-shadow: 3px 3px 3px 3px rgba(11, 22, 4, 0.178);
 }
 
+img {
+  overflow-x:hidden;
+}
