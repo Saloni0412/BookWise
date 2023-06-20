@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Book } = require('../../models');
+const getBookImage = require('../../utils/bookImage');
 
 router.get('/', async (req, res) => {
     try {
@@ -20,11 +21,13 @@ router.get('/', async (req, res) => {
   });
   
   router.post('/', async (req, res) => {
+    const bookImage = await getBookImage(req.body.name);
     try {
       const createBook = await Book.create(
         {
         ...req.body,
-        user_id: req.session.user_id
+        imageURL: bookImage,
+        user_id: req.session.user_id,
       });
       res.status(200).json(createBook);
     } catch (err) {
