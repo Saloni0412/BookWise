@@ -16,7 +16,7 @@ BookWise is a web application that allows users to Create a book management syst
 
 - User Registration, Login and Logout: Users can create an account, log inand log put to access personalized features.
 - Book Details: Users can view detailed information about a book, including the title, author, cover image, and description.
-- Add Books: Users can contribute to the book collection by adding new books to the database.
+- Add Books: Users can add the book collection to the database.
 
 ## Installation
 
@@ -70,6 +70,7 @@ http://localhost:3001/
 - Back-end: Node.js, Express.js
 - Database: MySQL
 - User Authentication: bcrypt.js, express-session
+- HTTP Requests: Axios
 
 ## Contributing
 
