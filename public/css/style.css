@@ -41,28 +41,44 @@ form {
   flex-direction: column;
 }
 
-#login-btn {
+.login-btn {
   color: white;
+  margin-top: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+
+  
 }
 
-.submit-btn {
-  color: white;
-}
-
-.login-user {
+#login-user {
   color: black;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
-.login-pass {
+#login-pass {
   color: black;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
-.signup-user {
+#signup-user {
   color: black;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
-.signup-pass {
+#signup-pass {
   color: black;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .input {
@@ -250,4 +266,36 @@ footer p {
 
 .bg-color {
   background-color: #dfdfd6;
+}
+
+.parent {
+  display: flex;
+  margin-top: 20px;
+}
+
+.child {
+  margin-left: 30px;
+}
+
+h5 {
+  font-family: Georgia, sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.img {
+  height: 200px;
+  margin-left: 10px;
+  border: 3px solid #000000;
+  
+}
+.suggesstion {
+  box-shadow: 4px 4px 4px 4px rgba(11, 22, 4, 0.178);
+  width: 800px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f3f5de;
+  margin-bottom: 40px;
 }
