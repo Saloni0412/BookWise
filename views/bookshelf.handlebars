@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary mt-3 ms-3 bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
   ADD A Book
 </button>
 
@@ -34,36 +34,21 @@
   </div>
 </div>
 
+<div class="card-container">
+  {{#if books.length}}
+  {{#each books as |book|}}
 
-{{#if books.length}}
-{{#each books as |book|}}
-<div class="card">
-  <img src="{{imageURL}}" class="card-img-top" alt="Book Image">
-  <div class="card-body">
-    <h5 class="card-title">{{name}}</h5>
-    <p class="card-text"><strong>Author:</strong> {{author}}</p>
-    <p class="card-text"><strong>Genre:</strong> {{genre}}</p>
-
+  <div class="card book-cover">
+    <h2 class="text-dark book-detail fs-2">{{name}}</h2>
+    <img class="book-image" src="{{imageURL}}" alt="Book Image">
+    <p class="text-dark book-detail"><strong>Author:</strong> {{author}}</p>
+    <p class="text-dark book-detail"><strong>Genre:</strong> {{genre}}</p>
   </div>
+
+  {{/each}}
+  {{/if}}
 </div>
-{{/each}}
-{{/if}}
-<!-- <div class="card-container">
-      <div class="card bg-black">
-          <h2>Book Title</h2>
-          <img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
-          <p>Card content goes here...</p>
-      </div>
-      <div class="card bg-black">
-          <h2>Card 2</h2>
-          <img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
-          <p>Card content goes here...</p>
-      </div>
-      <div class="card bg-black">
-          <h2>Card 3</h2><img class="cover" src="./public/css/asset/Untitled design (15).png" alt="book page">
-          <p>Card content goes here...</p>
-      </div>
-  </div> -->
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="/js/addingBook.js"></script>

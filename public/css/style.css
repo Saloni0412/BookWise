@@ -220,12 +220,12 @@ footer p {
 }
 
 .card {
-  width: auto;
+  /* width: 300px; */
   background-color: #dad6df;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+  display: flexbox;
 }
 
 .card h2 {
@@ -299,3 +299,27 @@ h5 {
   background-color: #f3f5de;
   margin-bottom: 40px;
 }
+
+.book-cover {
+  box-shadow: 4px 4px 4px 4px rgba(11, 22, 4, 0.178);
+  width: 240px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  background-color: #dee4c2;
+  margin-bottom: 40px;
+}
+
+.book-detail {
+  padding-top: 6px;
+  font-size: 20px;
+  font-family: Georgia, sans-serif;
+}
+
+.book-image {
+  border: 2px solid #000000;
+  width: 200px;
+  height: 250px;
+  box-shadow: 3px 3px 3px 3px rgba(11, 22, 4, 0.178);
+}
+
