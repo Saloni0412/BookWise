@@ -323,22 +323,6 @@ h5 {
   box-shadow: 3px 3px 3px 3px rgba(11, 22, 4, 0.178);
 }
 
-@media screen and (max-width: 426px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
+img {
+  overflow-x:hidden;
 }
