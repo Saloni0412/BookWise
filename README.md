@@ -98,10 +98,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 [https://mighty-garden-26521.herokuapp.com/](https://mighty-garden-26521.herokuapp.com/)
 
-<!-- add screenshot here -->
-
-
-
-
-
+![screenShot](./assets/screenshot1.png)
+![screenShot](./assets/screenshot2.png)
+![screenShot](./assets/Screenshot3.png)
 
